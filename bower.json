@@ -1,0 +1,27 @@
+{
+  "name": "web-starter-kid",
+  "description": "Starter kit for markup projects",
+  "main": "",
+  "authors": [
+    "SangNguyen"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "starter",
+    "markup",
+    "JustCoded",
+    "jc"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "k-responsive-menu": "^3.0.0",
+    "Font-Awesome": "^5.0.13"
+  }
+}
