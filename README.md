@@ -119,6 +119,8 @@ run this command in PowerShell(Admin) : npm --add-python-to-path='true' --debug 
 run : npm i -g bower yo gulp gulp-cli node-sass node-gyp
 
 run : npm config set msvs_version 2015
+
+run : npm i gulp-cli -g
 ```
 
 
