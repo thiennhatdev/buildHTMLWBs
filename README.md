@@ -112,7 +112,14 @@ $ gulp production
 
 `gulp production` task creates the `production/` folder in the root of the project with **assets files only**. It will **help you** to **create clear** instances of code for the **production** or **further implementation**.
 
+```sh
+$ Bug fix
+run this command in PowerShell(Admin) : npm --add-python-to-path='true' --debug install --global windows-build-tools
 
+run : npm i -g bower yo gulp gulp-cli node-sass node-gyp
+
+run : npm config set msvs_version 2015
+```
 
 
 ```
