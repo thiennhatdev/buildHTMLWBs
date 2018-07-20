@@ -117,73 +117,6 @@ $ gulp production
 
 ```
 
-`Tasks` - folder for gulpfile tasks.
-In `package.json` you can find all the dependencies.
-In `src` folder you can find all sources for the project (images, sass , javascript files).
-
-## `src` folder structure
-
-```
-```
-
-Use `images` folder to add your graphic files, `modules` to add your javascript modules (don't forget to include it in app.js), `scss` folder to add your styles for the project. You can create, delete files and folders in `scss`, but don't forget to include them in `style.scss` file .
-
-Use `vendor_entries` to include plugins into your project.
-
-## JS
-
- In our WSK you can use ES2015(ES6). ES2015 isn't introducing anything other than improvements to the JavaScript language and a few new features.
-
- It is not an alternative syntax or language like CoffeeScript or TypeScript. It's good ol' fashioned JavaScript. The reason so many people are excited is that this version introduces a lot of much-needed improvements to the language.
-
-* All custom **javascript** files locate in `js/` folder;
-* Entry point for javascript is `src/js/app.js` you can **import** all you *.js* files from here using [ES6 import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) feature;
-* All javascript is **babelified** so yes! You can use all kind of [ES6 features](https://babeljs.io/docs/learn-es2015/) here.
-* All **extensions** must be installed by the [NPM](https://docs.npmjs.com/cli/install);
-* After installing the extension you must **include its files**:
-  * **js files** must be included in `src/vendor_entries/vendor.js` by adding new elements to the **array**;
-
-
-
-## Sass
-
-In our WSK you can use [SASS](http://sass-lang.com/). Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-
-Sass is a CSS preprocessor — a layer between the stylesheets you author and the .css files you serve to the browser. Sass (short for Syntactically Awesome Stylesheets) plugs the holes in CSS as a language, allowing you to write DRY code that’ll be faster, more efficient, and easier to maintain. In our WSK we follow Sass [guidelines](https://sass-guidelin.es/#architecture).
-
-So while normal CSS doesn’t yet allow things like variables, mixins (reusable blocks of styles), and other goodies, Sass provides a syntax that does all of that and more—enabling “super functionality” in addition to your normal CSS.
-
-* All custom **scss** files locate in `src/scss/` folder;
-* Entry point for all scss is `src/scss/style.scss` you can **import** all your *.scss* files from here;
-* You **don't need** to write **prefixes** for different browsers like `-webkit` it will be done by the gulp.
-
-The `src` directory above contains MDL's Sass files and the JavaScript sources for all MDL components.
-
-* All **extensions** must be installed by the [NPM](https://docs.npmjs.com/cli/install);
-* After installing the extension you must **include its files**:
-  * **css or sass files** must be included in `src/vendor_entries/vendor.scss` using `@import`.
-
-
-## Tasks
-
-|Task                               | Description                                                                                                                                                                                                                                               |
-|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| browser-sync-server | Browsersync can watch your files as you work. Changes you make will either be injected into the page (CSS & images) or will cause all browsers to do a full-page refresh.                      |
-| build-custom-js                         | Compiles all custom js from `src/js`                                                                                                     |
-| build-js-vendors               | minifies and сompiles all vendor js from `src/vendor_entries`)                                                                                                |
-| build-sass-production               | Compiles and minifies all custom scss from `src/scss` to `production`   folder                                                                                               |
-| build-sass                   | Compiles all custom scss from `src/scss` to `assets/css`   folder  |
-| build-styles-vendors                 | Compiles and minifies all plugins  scss from `src/vendor_entries` to `production`   folder                                                                                                                                                                            |
-| clean-production                | `production` folder removing                                                                                                                           |
-| copy-folders           | Need to copy all folders from sources to assets                       |
-| templates           | Compiles all pug files into html files                       |
-| html-hint           | Need to hint html files                    |
-| js-hint           | Need to hint js files                      |
-| image-clean           | Removing images                    |
-| image-min           | We use this to minify images                    |
-| watch           | Task for watching all the changes                   |
-
-
 
 
 
@@ -197,7 +130,7 @@ The `src` directory above contains MDL's Sass files and the JavaScript sources f
  |_____/ \__,_|_| |_|\__, |_| \_|\__, |\__,_|\__, |\___|_| |_|
                       __/ |       __/ |       __/ |
                      |___/       |___/       |___/
---> Thanks to justCode Team
+--> Thanks to JustCoded Team
 ## License
 
 The MIT License (MIT)
