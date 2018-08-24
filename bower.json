@@ -23,6 +23,7 @@
   "dependencies": {
     "k-responsive-menu": "^3.0.0",
     "Font-Awesome": "^5.0.13",
-    "k-sass-core": "^6.0.4"
+    "k-sass-core": "^6.0.4",
+    "bootstrap": "^4.1.3"
   }
 }

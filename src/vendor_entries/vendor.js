@@ -3,7 +3,8 @@
 // Note: ES6 support for these imports is not supported in base build
 
 module.exports = [
-  './node_modules/jquery/dist/jquery.js',
-  './node_modules/bootstrap/dist/js/bootstrap.min.js',
+  './bower_components/jquery/dist/jquery.min.js',
+  './node_modules/mdbootstrap/js/popper.min.js',
+  './bower_components/bootstrap/dist/js/bootstrap.min.js',
   './bower_components/k-responsive-menu/dist/js/k-responsive-menu.min.js'
 ];
