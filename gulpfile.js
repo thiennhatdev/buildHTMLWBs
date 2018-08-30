@@ -53,9 +53,9 @@
   /**
    * Hint JS
    */
-  requireTask(`${cfg.task.jsHint}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src
-  });
+  // requireTask(`${cfg.task.jsHint}`, `./${cfg.folder.tasks}/`, {
+  //   src: cfg.folder.src
+  // });
 
   /**
    * Build custom js
@@ -204,7 +204,7 @@
       templates: cfg.task.templates,
       buildCustomJs: cfg.task.buildCustomJs,
       buildSass: cfg.task.buildSass,
-      jsHint: cfg.task.jsHint,
+      // jsHint: cfg.task.jsHint,
       imageMin: cfg.task.imageMin,
       fonts: cfg.task.fonts
     }
@@ -222,7 +222,7 @@
       cfg.task.buildSass,
       cfg.task.buildSassFiles,
       cfg.task.buildStylesVendors,
-      cfg.task.jsHint,
+      // cfg.task.jsHint,
       cfg.task.imageMin,
       cfg.task.fonts
     ),
@@ -245,7 +245,7 @@
       cfg.task.buildSass,
       cfg.task.buildSassFiles,
       cfg.task.buildStylesVendors,
-      cfg.task.jsHint,
+      // cfg.task.jsHint,
       cfg.task.imageMin,
       cfg.task.fonts
     ),
@@ -268,7 +268,7 @@
       cfg.task.buildSassProd,
       cfg.task.buildSassFiles,
       cfg.task.buildStylesVendors,
-      cfg.task.jsHint,
+      // cfg.task.jsHint,
       cfg.task.imageMin,
       cfg.task.fonts
     ),

@@ -6,7 +6,8 @@
 const gulp       = require('gulp'),
       filesExist = require('files-exist'),
       uglify     = require('gulp-uglify'),
-      concat     = require('gulp-concat');
+      concat     = require('gulp-concat'),
+      babel      = require('gulp-babel');
 
 module.exports = function(options) {
 
@@ -19,6 +20,7 @@ module.exports = function(options) {
 
     return gulp.src(filesExist(jsVendors))
       .pipe(concat(options.vendorJsMin))
+      .pipe(babel())
       .pipe(uglify())
       .pipe(gulp.dest(`./${options.dest}/js`));
   };
