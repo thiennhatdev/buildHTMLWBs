@@ -58,7 +58,7 @@
   },
   "scripts": {
     "test": "gulp production",
-    "production": "gulp production",
+    "pro": "gulp production",
     "develop": "gulp dev",
     "start": "gulp"
   },

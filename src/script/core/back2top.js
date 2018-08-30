@@ -79,3 +79,5 @@ var back2top = {
 
 	}
 };
+
+export default back2top;
